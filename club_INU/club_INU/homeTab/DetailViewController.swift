@@ -31,7 +31,7 @@ class DetailViewController: UIViewController {
     let localSource = [ImageSource(imageString: "A")!]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//contentScaleMode
         clubName.text = getName
         realm = try! Realm()
         let looo = realm.objects(Contact.self).filter("clubname == %@", getName).first?.location
@@ -53,25 +53,25 @@ class DetailViewController: UIViewController {
         if image1 == nil{
             clubImage.setImageInputs(localSource)
         }else if image2 == nil{
-            let logo1 = URL(string: "http://inuclub.us.to:3303/\(image1!)")
+            let logo1 = URL(string: "http://appcenter.us.to:3303/\(image1!)")
             let kingfisherSource1 = [KingfisherSource(url: logo1!)]
             clubImage.setImageInputs(kingfisherSource1)
         }else if image3 == nil{
-            let logo1 = URL(string: "http://inuclub.us.to:3303/\(image1!)")
-            let logo2 = URL(string: "http://inuclub.us.to:3303/\(image2!)")
+            let logo1 = URL(string: "http://appcenter.us.to:3303/\(image1!)")
+            let logo2 = URL(string: "http://appcenter.us.to:3303/\(image2!)")
             let kingfisherSource2 = [KingfisherSource(url: logo1!), KingfisherSource(url: logo2!)]
             clubImage.setImageInputs(kingfisherSource2)
         }else if image4 == nil{
-            let logo1 = URL(string: "http://inuclub.us.to:3303/\(image1!)")
-            let logo2 = URL(string: "http://inuclub.us.to:3303/\(image2!)")
-            let logo3 = URL(string: "http://inuclub.us.to:3303/\(image3!)")
+            let logo1 = URL(string: "http://appcenter.us.to:3303/\(image1!)")
+            let logo2 = URL(string: "http://appcenter.us.to:3303/\(image2!)")
+            let logo3 = URL(string: "http://appcenter.us.to:3303/\(image3!)")
             let kingfisherSource3 = [KingfisherSource(url: logo1!), KingfisherSource(url: logo2!),KingfisherSource(url: logo3!)]
             clubImage.setImageInputs(kingfisherSource3)
         }else {
-            let logo1 = URL(string: "http://inuclub.us.to:3303/\(image1!)")
-            let logo2 = URL(string: "http://inuclub.us.to:3303/\(image2!)")
-            let logo3 = URL(string: "http://inuclub.us.to:3303/\(image3!)")
-            let logo4 = URL(string: "http://inuclub.us.to:3303/\(image4!)")
+            let logo1 = URL(string: "http://appcenter.us.to:3303/\(image1!)")
+            let logo2 = URL(string: "http://appcenter.us.to:3303/\(image2!)")
+            let logo3 = URL(string: "http://appcenter.us.to:3303/\(image3!)")
+            let logo4 = URL(string: "http://appcenter.us.to:3303/\(image4!)")
             let kingfisherSource4 = [KingfisherSource(url: logo1!), KingfisherSource(url: logo2!),KingfisherSource(url: logo3!),KingfisherSource(url: logo4!)]
             clubImage.setImageInputs(kingfisherSource4)
         }
@@ -120,7 +120,8 @@ class DetailViewController: UIViewController {
         clubImage.slideshowInterval = 3.0
         clubImage.pageControl.currentPageIndicatorTintColor = UIColor.lightGray
         clubImage.pageControl.pageIndicatorTintColor = UIColor.black
-        clubImage.contentScaleMode = UIViewContentMode.scaleToFill
+        clubImage.contentScaleMode = .scaleAspectFit
+
 
     }
 

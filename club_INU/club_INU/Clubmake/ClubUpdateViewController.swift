@@ -121,9 +121,7 @@ class ClubUpdateViewController: UIViewController, UITextFieldDelegate , UITextVi
             }
             if res == "201"{
                     self.view.makeToast("수정 실패 날짜나 시간을 확인하세요")
-//                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "settingHome") as? SettingViewController{
-//                    self.navigationController?.show(vc, sender: nil)
-//                }
+
             }else {
                 
                 self.dataUpdate()

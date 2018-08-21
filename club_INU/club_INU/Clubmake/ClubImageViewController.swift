@@ -43,13 +43,12 @@ class ClubImageViewController: UIViewController,UIImagePickerControllerDelegate 
         Alamofire.upload(
             multipartFormData: { multipartFormData in
                 self.addImageData(multipartFormData: multipartFormData,image: uploadImage1)
-                
                 // If you need to post many data, you need to sort with key.
                 if let data = "userfile".data(using: String.Encoding.utf8) {
                     multipartFormData.append(data, withName: "file")
                 }
         },
-            to: "http://inuclub.us.to:3303/club/image/\(self.appDelegate.delegateClubnum)/1",
+            to: "http://appcenter.us.to:3303/club/image/\(self.appDelegate.delegateClubnum)/1",
             headers: ["Content-Type" : "application/x-www-form-urlencoded"],
             encodingCompletion: { encodingResult in
                 switch encodingResult {
@@ -78,7 +77,7 @@ class ClubImageViewController: UIViewController,UIImagePickerControllerDelegate 
                         multipartFormData.append(data, withName: "file")
                     }
             },
-                to: "http://inuclub.us.to:3303/club/image/\(self.appDelegate.delegateClubnum)/2",
+                to: "http://appcenter.us.to:3303/club/image/\(self.appDelegate.delegateClubnum)/2",
                 headers: ["Content-Type" : "application/x-www-form-urlencoded"],
                 encodingCompletion: { encodingResult in
                     switch encodingResult {
@@ -107,7 +106,7 @@ class ClubImageViewController: UIViewController,UIImagePickerControllerDelegate 
                         multipartFormData.append(data, withName: "file")
                     }
             },
-                to: "http://inuclub.us.to:3303/club/image/\(self.appDelegate.delegateClubnum)/3",
+                to: "http://appcenter.us.to:3303/club/image/\(self.appDelegate.delegateClubnum)/3",
                 headers: ["Content-Type" : "application/x-www-form-urlencoded"],
                 encodingCompletion: { encodingResult in
                     switch encodingResult {
@@ -136,7 +135,7 @@ class ClubImageViewController: UIViewController,UIImagePickerControllerDelegate 
                         multipartFormData.append(data, withName: "file")
                     }
             },
-                to: "http://inuclub.us.to:3303/club/image/\(self.appDelegate.delegateClubnum)/4",
+                to: "http://appcenter.us.to:3303/club/image/\(self.appDelegate.delegateClubnum)/4",
                 headers: ["Content-Type" : "application/x-www-form-urlencoded"],
                 encodingCompletion: { encodingResult in
                     switch encodingResult {
@@ -237,28 +236,28 @@ class ClubImageViewController: UIViewController,UIImagePickerControllerDelegate 
         if image1 == nil {
             imageView1.image = #imageLiteral(resourceName: "A")
         } else {
-            let logo1 = URL(string: "http://inuclub.us.to:3303/club/image/\(image1!)")
+            let logo1 = URL(string: "http://appcenter.us.to:3303/club/image/\(image1!)")
             imageView1.kf.setImage(with: logo1)
         }
         
         if image2 == nil {
             imageView2.image = #imageLiteral(resourceName: "A")
         } else {
-            let logo2 = URL(string: "http://inuclub.us.to:3303/club/image/\(image2!)")
+            let logo2 = URL(string: "http://appcenter.us.to:3303/club/image/\(image2!)")
             imageView2.kf.setImage(with: logo2)
         }
         
         if image3 == nil {
             imageView3.image = #imageLiteral(resourceName: "A")
         } else {
-            let logo3 = URL(string: "http://inuclub.us.to:3303/club/image/\(image3!)")
+            let logo3 = URL(string: "http://appcenter.us.to:3303/club/image/\(image3!)")
             imageView3.kf.setImage(with: logo3)
         }
         
         if image4 == nil {
             imageView4.image = #imageLiteral(resourceName: "A")
         } else {
-            let logo4 = URL(string: "http://inuclub.us.to:3303/club/image/\(image4!)")
+            let logo4 = URL(string: "http://appcenter.us.to:3303/club/image/\(image4!)")
             imageView4.kf.setImage(with: logo4)
         }
 

@@ -109,7 +109,7 @@ class ViewController: UIViewController , UISearchBarDelegate{
                 let count = img.count
                 for j in 0..<count{
                     let imgString = img[j]["img"]
-                    self.mainImg.append(KingfisherSource(url:URL(string:"http://inuclub.us.to:3303/\(imgString!)")!))
+                    self.mainImg.append(KingfisherSource(url:URL(string:"http://appcenter.us.to:3303/\(imgString!)")!))
                 }
                 self.slideshow.setImageInputs(self.mainImg)
             }
@@ -133,7 +133,7 @@ class ViewController: UIViewController , UISearchBarDelegate{
         slideshow.slideshowInterval = 3.0
         slideshow.pageControl.currentPageIndicatorTintColor = UIColor.lightGray
         slideshow.pageControl.pageIndicatorTintColor = UIColor.black
-        slideshow.contentScaleMode = UIViewContentMode.scaleAspectFill
+        slideshow.contentScaleMode = .scaleAspectFit
 //        slideshow.setImageInputs(localSource)
         
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.didTap))

@@ -33,6 +33,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         naviBar()
+        tableView.reloadData()
+
         
 
         // Do any additional setup after loading the view.
@@ -56,16 +58,23 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.ClubName.text = arrayData[indexPath.row].clubname
         cell.ClubLocation.text = arrayData[indexPath.row].location
 
+        cell.ClubImage.layer.masksToBounds = true
+        cell.ClubImage.layer.cornerRadius = 2.0
+        cell.ClubImage.layer.masksToBounds = false
+        cell.ClubImage.layer.borderWidth = 1.0
+        cell.ClubImage.layer.borderColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.5).cgColor
+        
+        
         if arrayData[indexPath.row].image1 != nil{
-            let logo = "http://inuclub.us.to:3303/club/image/\(arrayData[indexPath.row].image1!)"
+//            http://appcenter.us.to:3303/\(image1!)
+//            let logo = "http://appcenter.us.to:3303/club/image/\(arrayData[indexPath.row].image1!)"
+            let logo = "http://appcenter.us.to:3303/\(arrayData[indexPath.row].image1!)"
             print(logo,"logo")
             let loogo = ImageResource(downloadURL: URL(string: logo)!, cacheKey: logo)
             cell.ClubImage.kf.setImage(with: loogo)
         } else {
             cell.ClubImage.image = #imageLiteral(resourceName: "A")
         }
-        
-        
         cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0)
 
         return cell

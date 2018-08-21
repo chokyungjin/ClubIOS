@@ -4,10 +4,10 @@ import Alamofire
 
 class NetworkManager {
     
-    private let SERVER_URL = "http://inuclub.us.to:3303/club/"
-    private let MAIN_URL = "http://inuclub.us.to:3303/main"
-    private let EVENT_URL = "http://inuclub.us.to:3303/event/"
-    private let USER_URL = "http://inuclub.us.to:3303/user/"
+    private let SERVER_URL = "http://appcenter.us.to:3303/club/"
+    private let MAIN_URL = "http://appcenter.us.to:3303/main"
+    private let EVENT_URL = "http://appcenter.us.to:3303/event/"
+    private let USER_URL = "http://appcenter.us.to:3303/user/"
 
     
 
