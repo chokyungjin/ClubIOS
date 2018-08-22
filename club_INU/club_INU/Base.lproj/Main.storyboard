@@ -1134,17 +1134,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="첫번째 사진" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nah-fg-Y8l">
-                                                <rect key="frame" x="88" y="0.0" width="60" height="56"/>
+                                                <rect key="frame" x="71" y="0.0" width="60" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="836-XR-g9H">
                                                 <rect key="frame" x="191" y="0.0" width="96" height="56"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="56" id="q5q-o0-vRG"/>
-                                                    <constraint firstAttribute="width" constant="96" id="uFu-ob-JPw"/>
-                                                </constraints>
                                                 <state key="normal" image="Imageinsert"/>
                                                 <connections>
                                                     <action selector="imageButton1:" destination="rir-xd-FkP" eventType="touchUpInside" id="CoP-Ht-ccP"/>
@@ -1170,7 +1166,7 @@
                                             <constraint firstItem="Nah-fg-Y8l" firstAttribute="top" secondItem="xO7-xo-fK6" secondAttribute="top" id="Z8H-Ek-IMe"/>
                                             <constraint firstAttribute="trailing" secondItem="hwo-Vg-4AS" secondAttribute="trailing" id="p47-E4-Laz"/>
                                             <constraint firstAttribute="bottom" secondItem="836-XR-g9H" secondAttribute="bottom" id="s9l-Dk-rKM"/>
-                                            <constraint firstItem="Nah-fg-Y8l" firstAttribute="leading" secondItem="V6A-IL-SM4" secondAttribute="trailing" constant="32" id="zPf-cp-Nh1"/>
+                                            <constraint firstItem="Nah-fg-Y8l" firstAttribute="leading" secondItem="V6A-IL-SM4" secondAttribute="trailing" constant="15" id="zPf-cp-Nh1"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="5dJ-S5-fNK">
@@ -1184,7 +1180,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="두번째 사진" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p01-l1-fh1">
-                                                <rect key="frame" x="88" y="0.0" width="60" height="56"/>
+                                                <rect key="frame" x="71" y="0.0" width="60" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1213,7 +1209,7 @@
                                             <constraint firstItem="Qrv-KM-MVN" firstAttribute="top" secondItem="5dJ-S5-fNK" secondAttribute="top" id="1az-51-0RQ"/>
                                             <constraint firstItem="jjB-GH-lug" firstAttribute="leading" secondItem="KoK-bL-vHA" secondAttribute="trailing" constant="12" id="8Fy-Vj-JZS"/>
                                             <constraint firstItem="p01-l1-fh1" firstAttribute="top" secondItem="5dJ-S5-fNK" secondAttribute="top" id="EPZ-m5-aMn"/>
-                                            <constraint firstItem="p01-l1-fh1" firstAttribute="leading" secondItem="Qrv-KM-MVN" secondAttribute="trailing" constant="32" id="IdA-MI-IFL"/>
+                                            <constraint firstItem="p01-l1-fh1" firstAttribute="leading" secondItem="Qrv-KM-MVN" secondAttribute="trailing" constant="15" id="IdA-MI-IFL"/>
                                             <constraint firstItem="KoK-bL-vHA" firstAttribute="top" secondItem="5dJ-S5-fNK" secondAttribute="top" id="MJx-Sl-Smc"/>
                                             <constraint firstAttribute="trailing" secondItem="jjB-GH-lug" secondAttribute="trailing" id="Zuz-uL-bGt"/>
                                             <constraint firstAttribute="bottom" secondItem="p01-l1-fh1" secondAttribute="bottom" id="bJB-VF-gTI"/>
@@ -1234,7 +1230,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세번째 사진" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHJ-qr-Jgc">
-                                                <rect key="frame" x="88" y="0.0" width="60" height="56"/>
+                                                <rect key="frame" x="71" y="0.0" width="60" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1258,7 +1254,7 @@
                                             <constraint firstItem="7IM-dA-y1h" firstAttribute="leading" secondItem="Pvd-nr-o84" secondAttribute="trailing" constant="12" id="0dj-1a-5gQ"/>
                                             <constraint firstAttribute="bottom" secondItem="SHJ-qr-Jgc" secondAttribute="bottom" id="0hy-6C-rg4"/>
                                             <constraint firstItem="7IM-dA-y1h" firstAttribute="top" secondItem="5kJ-lK-wwF" secondAttribute="top" id="FJg-30-4QO"/>
-                                            <constraint firstItem="SHJ-qr-Jgc" firstAttribute="leading" secondItem="Dv9-XX-IZM" secondAttribute="trailing" constant="32" id="IT9-Nb-fVQ"/>
+                                            <constraint firstItem="SHJ-qr-Jgc" firstAttribute="leading" secondItem="Dv9-XX-IZM" secondAttribute="trailing" constant="15" id="IT9-Nb-fVQ"/>
                                             <constraint firstAttribute="bottom" secondItem="Pvd-nr-o84" secondAttribute="bottom" id="Myk-P9-88F"/>
                                             <constraint firstItem="Dv9-XX-IZM" firstAttribute="leading" secondItem="5kJ-lK-wwF" secondAttribute="leading" id="WgN-M9-CVs"/>
                                             <constraint firstAttribute="bottom" secondItem="7IM-dA-y1h" secondAttribute="bottom" id="khr-TV-oUw"/>
@@ -1280,7 +1276,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네번째 사진" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cd-oe-RoO">
-                                                <rect key="frame" x="88" y="0.0" width="60" height="56"/>
+                                                <rect key="frame" x="71" y="0.0" width="60" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1306,7 +1302,7 @@
                                             <constraint firstItem="Mv9-l6-qGb" firstAttribute="top" secondItem="gqP-3v-R3M" secondAttribute="top" id="E6K-f4-HHb"/>
                                             <constraint firstAttribute="bottom" secondItem="PlK-Pn-ZJh" secondAttribute="bottom" id="Ec5-zM-na2"/>
                                             <constraint firstItem="pxv-KG-CJS" firstAttribute="top" secondItem="gqP-3v-R3M" secondAttribute="top" id="IUP-Xc-K52"/>
-                                            <constraint firstItem="9Cd-oe-RoO" firstAttribute="leading" secondItem="pxv-KG-CJS" secondAttribute="trailing" constant="32" id="N9O-1c-NZC"/>
+                                            <constraint firstItem="9Cd-oe-RoO" firstAttribute="leading" secondItem="pxv-KG-CJS" secondAttribute="trailing" constant="15" id="N9O-1c-NZC"/>
                                             <constraint firstAttribute="trailing" secondItem="Mv9-l6-qGb" secondAttribute="trailing" id="T1G-v5-Vwg"/>
                                             <constraint firstItem="PlK-Pn-ZJh" firstAttribute="top" secondItem="gqP-3v-R3M" secondAttribute="top" id="b8I-PE-aa1"/>
                                             <constraint firstAttribute="bottom" secondItem="Mv9-l6-qGb" secondAttribute="bottom" id="cRo-71-qZG"/>
