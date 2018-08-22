@@ -43,6 +43,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passTextField.delegate = self
         errorLael.text = "로그인을 해 주세요"
         
+        if UserDefaults.standard.string(forKey: "id") != nil{
+            self.idTextField.text = UserDefaults.standard.string(forKey: "id")
+            self.passTextField.text = UserDefaults.standard.string(forKey: "pass")
+            loginButton((Any).self)
+        }
+        
 
     }
     override func didReceiveMemoryWarning() {
@@ -86,12 +92,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 self.view.makeToast("아이디 또는 비밀번호를 다시 확인해 주세요.")
             }else {
             if let vc = self.storyboard?.instantiateViewController(withIdentifier: "settingHome") as? SettingViewController{
+                UserDefaults.standard.set(self.idTextField.text, forKey: "id")
+                UserDefaults.standard.set(self.passTextField.text, forKey:"pass")
+                UserDefaults.standard.synchronize()
+                
                 vc.number = res!
                 self.navigationController?.show(vc, sender: nil)
                 }
             }
-            
-            
     }
     
    }

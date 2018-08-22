@@ -263,5 +263,22 @@ class NetworkManager {
         }
     }
     
+    
+    func deleteImage(num: String, completionHandler: @escaping (String?) -> ()){
+        let header = ["Content-Type" : "application/x-www-form-urlencoded"]
+        print("\(SERVER_URL)image/\(self.appDelegate.delegateClubnum)/\(num)")
+        Alamofire.request("\(SERVER_URL)image/\(self.appDelegate.delegateClubnum)/\(num)", method: .delete, parameters: nil, headers: header).responseString { res in
+            switch res.result {
+            case .success(let item):
+                print(item)
+                
+                completionHandler(item)
+            case .failure(let error):
+                print(error)
+                
+                completionHandler(nil)
+            }
+        }
+    }
 }
 

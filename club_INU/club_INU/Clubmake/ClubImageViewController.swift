@@ -91,7 +91,7 @@ class ClubImageViewController: UIViewController,UIImagePickerControllerDelegate 
             }
             )
         }
-        
+
         if imageView3.image == #imageLiteral(resourceName: "A") || imageView3.image == nil{
             print("3번 안올림")
         }else {
@@ -157,6 +157,68 @@ class ClubImageViewController: UIViewController,UIImagePickerControllerDelegate 
         }
 
     }
+    
+    
+    @IBAction func deleteButton1(_ sender: Any) {
+        NetworkManager.shared.deleteImage(num: "1"){ res in
+            if let res = res{
+                print(res)
+            }
+            if res == "400"{
+                self.view.makeToast("저장된 이미지가 없어요!")
+            }else {
+                self.view.makeToast("사진삭제완료.")
+                self.imageView1.image = #imageLiteral(resourceName: "A")
+                self.dataUpdate()
+                }
+            }
+    }
+    
+    @IBAction func deleteButton2(_ sender: Any) {
+        NetworkManager.shared.deleteImage(num: "2"){ res in
+            if let res = res{
+                print(res)
+            }
+            if res == "400"{
+                self.view.makeToast("저장된 이미지가 없어요!")
+            }else {
+                self.view.makeToast("사진삭제완료.")
+                self.imageView2.image = #imageLiteral(resourceName: "A")
+                self.dataUpdate()
+            }
+        }
+    }
+    
+    @IBAction func deleteButton3(_ sender: Any) {
+        NetworkManager.shared.deleteImage(num: "3"){ res in
+            if let res = res{
+                print(res)
+            }
+            if res == "Bad Request"{
+                self.view.makeToast("저장된 이미지가 없어요!")
+            }else {
+                self.view.makeToast("사진삭제완료.")
+                self.imageView3.image = #imageLiteral(resourceName: "A")
+                self.dataUpdate()
+            }
+        }
+    }
+    
+    @IBAction func deleteButton4(_ sender: Any) {
+        NetworkManager.shared.deleteImage(num: "4"){ res in
+            if let res = res{
+                print(res)
+            }
+            if res == "400"{
+                self.view.makeToast("저장된 이미지가 없어요!")
+            }else {
+                self.view.makeToast("사진삭제완료.")
+                self.imageView4.image = #imageLiteral(resourceName: "A")
+                self.dataUpdate()
+            }
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -236,28 +298,30 @@ class ClubImageViewController: UIViewController,UIImagePickerControllerDelegate 
         if image1 == nil {
             imageView1.image = #imageLiteral(resourceName: "A")
         } else {
-            let logo1 = URL(string: "http://appcenter.us.to:3303/club/image/\(image1!)")
+            
+//            "http://appcenter.us.to:3303/\(arrayData[indexPath.row].image1!
+            let logo1 = URL(string: "http://appcenter.us.to:3303/\(image1!)")
             imageView1.kf.setImage(with: logo1)
         }
         
         if image2 == nil {
             imageView2.image = #imageLiteral(resourceName: "A")
         } else {
-            let logo2 = URL(string: "http://appcenter.us.to:3303/club/image/\(image2!)")
+            let logo2 = URL(string: "http://appcenter.us.to:3303/\(image2!)")
             imageView2.kf.setImage(with: logo2)
         }
         
         if image3 == nil {
             imageView3.image = #imageLiteral(resourceName: "A")
         } else {
-            let logo3 = URL(string: "http://appcenter.us.to:3303/club/image/\(image3!)")
+            let logo3 = URL(string: "http://appcenter.us.to:3303/\(image3!)")
             imageView3.kf.setImage(with: logo3)
         }
         
         if image4 == nil {
             imageView4.image = #imageLiteral(resourceName: "A")
         } else {
-            let logo4 = URL(string: "http://appcenter.us.to:3303/club/image/\(image4!)")
+            let logo4 = URL(string: "http://appcenter.us.to:3303/\(image4!)")
             imageView4.kf.setImage(with: logo4)
         }
 

@@ -58,10 +58,10 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.ClubName.text = arrayData[indexPath.row].clubname
         cell.ClubLocation.text = arrayData[indexPath.row].location
 
-        cell.ClubImage.layer.masksToBounds = true
-        cell.ClubImage.layer.cornerRadius = 2.0
-        cell.ClubImage.layer.masksToBounds = false
-        cell.ClubImage.layer.borderWidth = 1.0
+//        cell.ClubImage.layer.masksToBounds = true
+//        cell.ClubImage.layer.cornerRadius = 2.0
+//        cell.ClubImage.layer.masksToBounds = false
+//        cell.ClubImage.layer.borderWidth = 1.0
         cell.ClubImage.layer.borderColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.5).cgColor
         
         

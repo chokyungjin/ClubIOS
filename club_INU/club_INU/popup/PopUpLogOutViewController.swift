@@ -32,7 +32,8 @@ class PopUpLogOutViewController: UIViewController {
     @IBAction func logoutPopup(_ sender: Any) {
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabbar") as? TabBarViewController {
 //            self.navigationController?.show(vc, sender: nil)
-            
+            UserDefaults.standard.removeObject(forKey: "id")
+            UserDefaults.standard.removeObject(forKey: "pass")
             self.present(vc, animated: true, completion: nil)
         }
     }
