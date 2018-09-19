@@ -3,7 +3,7 @@
 
   ------------------------------------
 
- # Discription
+ # Description
    #### 인천대학교 학생들을 위한 동아리 어플
 
    ![동아리 메인](https://i.imgur.com/8bf4SO6.jpg)
@@ -56,10 +56,10 @@
 
   # Tech/framework used
 
-   Node.js + express
-   MYSQL
-   Android Studio(Language : java)
-   Xcode(Language : swift)
+   - Node.js + express
+   - MYSQL
+   - Android Studio(Language : java)
+   - Xcode(Language : swift)
   # Library
    - iOS
      - [Alamofire](https://github.com/Alamofire/Alamofire)
