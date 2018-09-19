@@ -71,8 +71,8 @@
      - [Toast-Swift](https://github.com/scalessec/Toast-Swift)
 
    - Android
-     - Retrofit2
-     - Glide
+     - [Retrofit2](http://square.github.io/retrofit/)
+     - [Glide](https://github.com/bumptech/glide)
 
   -------------------------------------
 
