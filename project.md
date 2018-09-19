@@ -11,6 +11,7 @@
    ![동아리 로그인](https://i.imgur.com/AYLa5Lv.jpg)
    ![동아리 설정](https://i.imgur.com/iEZxBXX.jpg)
    ![동아리 행사등록 (1)](https://i.imgur.com/kJyBXLs.jpg)
+   
      # ***나머지 사진은 다운받아서 확인하세요***
 
    - 개발배경
