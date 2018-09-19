@@ -1,6 +1,6 @@
 # INU CLUB - iOS
  - 인천대학교 동아리 어플 iOS 설명
- - [인천대학교 동아리 어플 전체 설명](http://www.naver.com)
+ - [인천대학교 동아리 어플 전체 설명](https://github.com/inu-appcenter/inuclubIOS/blob/master/project.md)
 
   ------------------------------------
 
@@ -16,7 +16,7 @@
 
 
    - 주요기능
-     
+
 
      - 사용자
        - 언제어디서나 등록된 동아리 검색 및 정보 수집 가능
