@@ -12,19 +12,19 @@ import UIKit
 open class ImageSlideshowItem: UIScrollView, UIScrollViewDelegate {
 
     /// Image view to hold the image
-    open let imageView = UIImageView()
+    public let imageView = UIImageView()
 
     /// Activity indicator shown during image loading, when nil there won't be shown any
-    open let activityIndicator: ActivityIndicatorView?
+    public let activityIndicator: ActivityIndicatorView?
 
     /// Input Source for the item
-    open let image: InputSource
+    public let image: InputSource
 
     /// Guesture recognizer to detect double tap to zoom
     open var gestureRecognizer: UITapGestureRecognizer?
 
     /// Holds if the zoom feature is enabled
-    open let zoomEnabled: Bool
+    public let zoomEnabled: Bool
 
     /// If set to true image is initially zoomed in
     open var zoomInInitially = false
@@ -125,12 +125,18 @@ open class ImageSlideshowItem: UIScrollView, UIScrollViewDelegate {
             isLoading = true
             imageReleased = false
             activityIndicator?.show()
-            image.load(to: self.imageView) { image in
+            image.load(to: self.imageView) {[weak self] image in
                 // set image to nil if there was a release request during the image load
-                self.imageView.image = self.imageReleased ? nil : image
-                self.activityIndicator?.hide()
-                self.loadFailed = image == nil
-                self.isLoading = false
+                if let imageRelease = self?.imageReleased, imageRelease {
+                    self?.imageView.image = nil
+                }else{
+                    self?.imageView.image = image
+                }
+                self?.activityIndicator?.hide()
+                self?.loadFailed = image == nil
+                self?.isLoading = false
+                
+                self?.setNeedsLayout()
             }
         }
     }
@@ -169,25 +175,6 @@ open class ImageSlideshowItem: UIScrollView, UIScrollViewDelegate {
 
     fileprivate func screenSize() -> CGSize {
         return CGSize(width: frame.width, height: frame.height)
-    }
-
-    fileprivate func calculatePictureFrame() {
-        let boundsSize: CGSize = bounds.size
-        var frameToCenter: CGRect = imageView.frame
-
-        if frameToCenter.size.width < boundsSize.width {
-            frameToCenter.origin.x = (boundsSize.width - frameToCenter.size.width) / 2
-        } else {
-            frameToCenter.origin.x = 0
-        }
-
-        if frameToCenter.size.height < boundsSize.height {
-            frameToCenter.origin.y = (boundsSize.height - frameToCenter.size.height) / 2
-        } else {
-            frameToCenter.origin.y = 0
-        }
-
-        imageView.frame = frameToCenter
     }
 
     fileprivate func calculatePictureSize() -> CGSize {

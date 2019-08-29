@@ -1,44 +1,72 @@
 PODS:
-  - Alamofire (4.7.2)
-  - FSCalendar (2.7.9)
-  - ImageSlideshow (1.5.3):
-    - ImageSlideshow/Core (= 1.5.3)
-  - ImageSlideshow/Core (1.5.3)
-  - ImageSlideshow/Kingfisher (1.5.3):
+  - Alamofire (4.8.2)
+  - DLRadioButton (1.4.12)
+  - FSCalendar (2.8.0)
+  - ImageSlideshow (1.8.0):
+    - ImageSlideshow/Core (= 1.8.0)
+  - ImageSlideshow/Core (1.8.0)
+  - ImageSlideshow/Kingfisher (1.8.0):
     - ImageSlideshow/Core
     - Kingfisher (> 3.0)
   - IQKeyboardManagerSwift (5.0.0)
-  - Kingfisher (4.7.0)
-  - Realm (3.5.0):
-    - Realm/Headers (= 3.5.0)
-  - Realm/Headers (3.5.0)
-  - RealmSwift (3.5.0):
-    - Realm (= 3.5.0)
-  - SwiftyJSON (4.1.0)
+  - Kingfisher (5.7.1)
+  - LinearProgressView (2.0.1)
+  - MTSlideToOpen (1.4.2)
+  - Realm (3.17.3):
+    - Realm/Headers (= 3.17.3)
+  - Realm/Headers (3.17.3)
+  - RealmSwift (3.17.3):
+    - Realm (= 3.17.3)
+  - SwiftyJSON (5.0.0)
   - Toast-Swift (3.0.1)
+  - UICheckbox (0.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - DLRadioButton (~> 1.4)
   - FSCalendar
   - ImageSlideshow (~> 1.4)
   - ImageSlideshow/Kingfisher
   - IQKeyboardManagerSwift (= 5.0.0)
   - Kingfisher
+  - LinearProgressView (~> 2.0)
+  - MTSlideToOpen
   - RealmSwift
   - SwiftyJSON
   - Toast-Swift (~> 3.0.1)
+  - UICheckbox
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DLRadioButton
+    - FSCalendar
+    - ImageSlideshow
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - LinearProgressView
+    - MTSlideToOpen
+    - Realm
+    - RealmSwift
+    - SwiftyJSON
+    - Toast-Swift
+    - UICheckbox
 
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
-  ImageSlideshow: 24a1184909f589379ba2527ebcc77996881bb1f2
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  ImageSlideshow: 197130fe349aafa9446f54277c792551d41eadf9
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
-  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
-  Realm: 0378021c424e4e2bd6a0e63b27881e929d9b9ad1
-  RealmSwift: 3322562622fda2ad596985ead4d8d8be30cf838c
-  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
+  LinearProgressView: 353d4d45dc599b83cc4b43f14e6c0336aa6f3834
+  MTSlideToOpen: 16c26a4ecf72383751e01a4294746ea48b45231c
+  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
+  RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+  UICheckbox: 54af9bc308c8c2b18404f4c360172115c0daea36
 
-PODFILE CHECKSUM: 1108fa3f522fe40e61dc5518b0757a705a805259
+PODFILE CHECKSUM: de9c7df03960a25a14f2059db40713d61c755319
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.7.2

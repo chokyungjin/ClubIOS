@@ -7,13 +7,18 @@ target 'club_INU' do
   use_frameworks!
 
   # Pods for club_INU
+    pod 'LinearProgressView', '~> 2.0'
+
+pod 'RealmSwift'
+pod 'UICheckbox'
+pod 'DLRadioButton', '~> 1.4'
+pod 'MTSlideToOpen'
 pod 'Alamofire', '~> 4.5'
 pod 'ImageSlideshow', '~> 1.4'
 pod 'Kingfisher'
 pod "ImageSlideshow/Kingfisher"
 pod 'FSCalendar'
 pod 'IQKeyboardManagerSwift', '5.0.0'
-pod ‘RealmSwift’
 pod 'Toast-Swift', '~> 3.0.1'
 pod 'SwiftyJSON'
 

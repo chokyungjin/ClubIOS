@@ -8,10 +8,14 @@
 
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
+class CustomTableViewCell: UITableViewCell {    //동아리 소개 테이블 셀 설정
 
-    @IBOutlet weak var ClubImage: UIImageView!
-    @IBOutlet weak var ClubName: UILabel!
-    @IBOutlet weak var ClubLocation: UILabel!
+    @IBOutlet weak var ClubImage: UIImageView!  //동아리 이미지뷰
+    @IBOutlet weak var ClubName: UILabel!   //동아리 이름 레이블
+    @IBOutlet weak var ClubLocation: UILabel!   //동아리 장소 레이블
+    @IBOutlet weak var LayerButton: UIButton!
+    
+    
+    
     
 }

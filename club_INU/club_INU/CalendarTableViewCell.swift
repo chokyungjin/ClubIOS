@@ -9,10 +9,10 @@
 import UIKit
 
 class CalendarTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var eventNameLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
+//켈린더 사용하는 탭에서 사용하는 뷰는 테이블 뷰로 사용할 예정.
+    @IBOutlet weak var dayLabel: UILabel!   //날짜레이블
+    @IBOutlet weak var timeLabel: UILabel!  //시간레이블
+    @IBOutlet weak var eventNameLabel: UILabel! //이벤트이름 레이블
+    @IBOutlet weak var locationLabel: UILabel!  //장소레이블
     
 }

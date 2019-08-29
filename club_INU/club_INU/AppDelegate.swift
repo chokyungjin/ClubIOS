@@ -7,22 +7,26 @@
 //
 
 import UIKit
-import IQKeyboardManagerSwift
+import IQKeyboardManagerSwift   //키보드 라이브러리
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var window: UIWindow?   //UIWindow 선언
     
-    var delegateClubnum = String()
-    var delegateEventnum = String()
-    var delegateClubname = String()
+    var delegateClubnum = String()  //String형 선언
+    var delegateEventnum = String() //String형 선언
+    var delegateClubname = String() //String형 선언
     
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        IQKeyboardManager.sharedManager().enable = true
+//        UINavigationBar.appearance().barTintColor = UIColor(red: 166.0 / 255.0, green: 191.0 / 255.0, blue: 232.0 / 255.0, alpha: 1.0)
+        
+        
+        //IQKeyboardManager가 활성화
 
         return true
     }

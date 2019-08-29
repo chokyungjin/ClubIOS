@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '10.0'
+inhibit_all_warnings!
+
+target 'club_INU' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for club_INU
+    pod 'LinearProgressView', '~> 2.0'
+pod 'UICheckbox'
+pod 'DLRadioButton', '~> 1.4'
+pod 'MTSlideToOpen'
+pod 'Alamofire', '~> 4.5'
+pod 'ImageSlideshow', '~> 1.4'
+pod 'Kingfisher'
+pod "ImageSlideshow/Kingfisher"
+pod 'FSCalendar'
+pod 'IQKeyboardManagerSwift', '5.0.0'
+pod 'RealmSwift'
+pod 'Toast-Swift', '~> 3.0.1'
+pod 'SwiftyJSON'
+
+end
+

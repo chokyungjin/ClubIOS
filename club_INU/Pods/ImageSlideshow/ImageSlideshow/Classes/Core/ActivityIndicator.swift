@@ -31,11 +31,11 @@ extension UIActivityIndicatorView: ActivityIndicatorView {
     }
 
     public func show() {
-        self.startAnimating()
+        startAnimating()
     }
 
     public func hide() {
-        self.stopAnimating()
+        stopAnimating()
     }
 }
 
@@ -44,6 +44,7 @@ extension UIActivityIndicatorView: ActivityIndicatorView {
 open class DefaultActivityIndicator: ActivityIndicatorFactory {
     /// activity indicator style
     open var style: UIActivityIndicatorViewStyle
+    
     /// activity indicator color
     open var color: UIColor?
 
@@ -58,7 +59,11 @@ open class DefaultActivityIndicator: ActivityIndicatorFactory {
 
     /// create ActivityIndicatorView instance
     open func create() -> ActivityIndicatorView {
+        #if swift(>=4.2)
+        let activityIndicator = UIActivityIndicatorView(style: style)
+        #else
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: style)
+        #endif
         activityIndicator.color = color
         activityIndicator.hidesWhenStopped = true
 
